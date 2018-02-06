@@ -4,6 +4,7 @@
 public class PointMainLessHelp {
     public static void main(String[] args) {
         // create two Point objects
+        ArrayList<Integer> myPoints = new ArrayList<Integer>();
         Point p1 = new Point(12, 4);
         Point p2 = new Point(0, 5);
 
@@ -17,8 +18,8 @@ public class PointMainLessHelp {
                            p2.distanceFromOrigin());
 
         // translate each point to a new location
-        p1 = p1.pointTranslate(11, 6);
-        p2 = p2.pointTranslate(1, 7);
+        p1 = p1.translate(-4, 1);
+        p2 = p2.translate(4, 1);
 
         // print the points again
         System.out.println("p1 translated is now " + p1);
