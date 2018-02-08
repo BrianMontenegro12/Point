@@ -3,7 +3,10 @@
 // Class invariant: x >= 0 && y >= 0.
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.awt.*;
 public class Point {
+    Scanner askUser = new Scanner(System.in);
+    ArrayList<Integer> userPoints = new ArrayList<Integer>();
     private int x;
     private int y;
 
@@ -11,7 +14,7 @@ public class Point {
     public Point() {
         this(0, 0); // calls Point(int, int) constructor
     }
-    public void userX() {
+    public void userPoint() {
     }
 
     // Constructs a new point with the given (x, y) location.
